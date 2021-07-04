@@ -3,3 +3,7 @@
 //
 
 #import "AGAudioPlayer.h"
+#import "AGAudioItem.h"
+#import "AGAudioPlayerUpNextQueue.h"
+
+#import <BASSGaplessAudioPlayer/ObjectiveBASS.h>
