@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -67,7 +67,7 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ffl-ZD-4Ea" userLabel="Playback Progress">
-                            <rect key="frame" x="0.0" y="62" width="375" height="2"/>
+                            <rect key="frame" x="0.0" y="60" width="375" height="4"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </progressView>
                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0z9-ra-zkO">
@@ -229,6 +229,9 @@
                             <connections>
                                 <outlet property="dataSource" destination="-1" id="eJo-JJ-Svo"/>
                                 <outlet property="delegate" destination="-1" id="z9B-wY-a20"/>
+                                <outlet property="emptyDataSetDelegate" destination="-1" id="v3y-HV-V5E"/>
+                                <outlet property="emptyDataSetSource" destination="-1" id="d9S-4T-gkK"/>
+                                <outlet property="prefetchDataSource" destination="-1" id="y4W-wL-y4D"/>
                             </connections>
                         </tableView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3c-Z9-Kas">
@@ -326,7 +329,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="94.5"/>
                                     <subviews>
                                         <button opaque="NO" alpha="0.69999999999999996" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CeH-fp-mYI">
-                                            <rect key="frame" x="163.5" y="-12" width="48" height="48"/>
+                                            <rect key="frame" x="175.5" y="0.0" width="24" height="24"/>
                                             <accessibility key="accessibilityConfiguration" label="Close Full Player"/>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <state key="normal" image="chevron"/>
@@ -636,6 +639,20 @@
             </connections>
         </panGestureRecognizer>
     </objects>
+    <designables>
+        <designable name="7hF-uW-Yvs">
+            <size key="intrinsicContentSize" width="112" height="33.5"/>
+        </designable>
+        <designable name="7up-hA-coa">
+            <size key="intrinsicContentSize" width="67.5" height="24"/>
+        </designable>
+        <designable name="t5s-bW-saf">
+            <size key="intrinsicContentSize" width="28.5" height="13.5"/>
+        </designable>
+        <designable name="zis-2F-bXq">
+            <size key="intrinsicContentSize" width="33" height="16"/>
+        </designable>
+    </designables>
     <resources>
         <image name="backward" width="24" height="24"/>
         <image name="chevron" width="24" height="24"/>

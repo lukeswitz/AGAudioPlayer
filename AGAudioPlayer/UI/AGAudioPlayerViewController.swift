@@ -172,11 +172,12 @@ public struct AGAudioPlayerColors {
         
         uiMiniButtonPlus.isHidden = true
         uiButtonPlus.alpha = 0.0
-        
-        setupTable()
-        setupStretchyHeader()
-        setupColors()
-        setupPlayerUiActions()
+        DispatchQueue.main.async {
+            self.setupTable()
+            self.setupStretchyHeader()
+            self.setupColors()
+            self.setupPlayerUiActions()
+        }
     }
     
     override public func viewWillAppear(_ animated: Bool) {
