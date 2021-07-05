@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		00F6D8B8EE7CDB10908B8E7F /* Pods_AGAudioPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D67DF68517CEBB91D42D7E1 /* Pods_AGAudioPlayer.framework */; };
 		4333981B2249E91E00BECC8A /* UIColor+AGAudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4333981A2249E91E00BECC8A /* UIColor+AGAudioPlayer.swift */; };
-		43861642254E8FD60084814C /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43861641254E8FD60084814C /* AudioPlayer.swift */; };
 		7C0D7BC81A44B68600607581 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C0D7BC41A44B68600607581 /* LaunchScreen.xib */; };
 		7C3FE4461AB3B69900A52266 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C3FE4451AB3B69900A52266 /* MediaPlayer.framework */; };
 		7C3FF8361AB6723B003BAE01 /* AGAudioItemCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FF8351AB6723B003BAE01 /* AGAudioItemCollection.m */; };
@@ -40,16 +39,16 @@
 		13AE2D5751E4226410EF7FD4 /* libPods-AGAudioPlayerOSX.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AGAudioPlayerOSX.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D67DF68517CEBB91D42D7E1 /* Pods_AGAudioPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AGAudioPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4333981A2249E91E00BECC8A /* UIColor+AGAudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AGAudioPlayer.swift"; sourceTree = "<group>"; };
-		4386163E254E8F5A0084814C /* AGAudioPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AGAudioPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
-		43861641254E8FD60084814C /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		7C0D7BC51A44B68600607581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		7C12F7681C493219006FA021 /* Pods-AGAudioPlayer.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-AGAudioPlayer.debug.xcconfig"; path = "Target Support Files/Pods-AGAudioPlayer/Pods-AGAudioPlayer.debug.xcconfig"; sourceTree = "<group>"; };
 		7C12F7691C493219006FA021 /* Pods-AGAudioPlayer.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-AGAudioPlayer.release.xcconfig"; path = "Target Support Files/Pods-AGAudioPlayer/Pods-AGAudioPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		7C3FE4451AB3B69900A52266 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		7C3FF8341AB6723B003BAE01 /* AGAudioItemCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGAudioItemCollection.h; sourceTree = "<group>"; };
 		7C3FF8351AB6723B003BAE01 /* AGAudioItemCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGAudioItemCollection.m; sourceTree = "<group>"; };
+		7C3FF8381AB67FE6003BAE01 /* AGCachable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AGCachable.h; path = AGAudioPlayer/AGCachable.h; sourceTree = "<group>"; };
 		7C4B52521AB38CBC00A57843 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		7C7FE9981F79D9DA003D47C6 /* RemoteCommandManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCommandManager.swift; sourceTree = "<group>"; };
+		7CB928C51E316AD000D963A0 /* AGAudioPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AGAudioPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
 		7CB928CC1E316BDB00D963A0 /* AGAudioPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGAudioPlayerViewController.swift; sourceTree = "<group>"; };
 		7CB928CD1E316BDB00D963A0 /* AGAudioPlayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AGAudioPlayerViewController.xib; sourceTree = "<group>"; };
 		7CB928D01E316DB700D963A0 /* AGAudioPlayerTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AGAudioPlayerTitleView.swift; sourceTree = "<group>"; };
@@ -75,6 +74,12 @@
 		7CC250D01A447AB0009F91C8 /* AGAudioItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGAudioItem.m; sourceTree = "<group>"; };
 		B7B0EBDDDA4C85817C274304 /* Pods-AGAudioPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AGAudioPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-AGAudioPlayer/Pods-AGAudioPlayer.release.xcconfig"; sourceTree = "<group>"; };
 		C122A1CA1C083B1800DE7E07 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.11.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		C1511AB31BDD9F6E003B4E6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C1511AB41BDD9F6E003B4E6C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C1511AB71BDD9F6E003B4E6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C1511AB91BDD9F6E003B4E6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C1511ABC1BDD9F6E003B4E6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C1511ABE1BDD9F6E003B4E6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1511ACA1BDDA420003B4E6C /* libPods-osx-HysteriaPlayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-osx-HysteriaPlayer.a"; path = "../../Library/Developer/Xcode/DerivedData/AGAudioPlayer-ceysjiavmokbcggbxsrdkqaoqjyg/Build/Products/Debug/libPods-osx-HysteriaPlayer.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +114,7 @@
 				7CB928D71E32B35400D963A0 /* Transition */,
 				7CB928D41E316EBF00D963A0 /* Components */,
 				7C4B52521AB38CBC00A57843 /* Icons.xcassets */,
+				7CB928C51E316AD000D963A0 /* AGAudioPlayer-Bridging-Header.h */,
 				7CB928CC1E316BDB00D963A0 /* AGAudioPlayerViewController.swift */,
 				7CB928CD1E316BDB00D963A0 /* AGAudioPlayerViewController.xib */,
 				7CB928DA1E32C3B900D963A0 /* AGExtensions.swift */,
@@ -145,9 +151,11 @@
 		7CC2508B1A447901009F91C8 = {
 			isa = PBXGroup;
 			children = (
+				7C3FF8381AB67FE6003BAE01 /* AGCachable.h */,
 				7CC250BD1A447910009F91C8 /* Example */,
 				7CC250961A447901009F91C8 /* AGAudioPlayer */,
 				7CC250B01A447901009F91C8 /* AGAudioPlayerTests */,
+				C1511AB21BDD9F6E003B4E6C /* AGAudioPlayerOSX */,
 				7CC250951A447901009F91C8 /* Products */,
 				611DADBAC9E9F54CCE4C248F /* Pods */,
 				80D42F16B827D769063109BD /* Frameworks */,
@@ -168,7 +176,6 @@
 				7C4B52481AB383C800A57843 /* UI */,
 				7CC250BE1A44792F009F91C8 /* AGAudioPlayer.h */,
 				7CC250BF1A44792F009F91C8 /* AGAudioPlayer.m */,
-				43861641254E8FD60084814C /* AudioPlayer.swift */,
 				7CC250CC1A447A98009F91C8 /* AGAudioPlayerUpNextQueue.h */,
 				7CC250CD1A447A98009F91C8 /* AGAudioPlayerUpNextQueue.m */,
 				7CC250CF1A447AB0009F91C8 /* AGAudioItem.h */,
@@ -176,7 +183,6 @@
 				7C3FF8341AB6723B003BAE01 /* AGAudioItemCollection.h */,
 				7C3FF8351AB6723B003BAE01 /* AGAudioItemCollection.m */,
 				4333981A2249E91E00BECC8A /* UIColor+AGAudioPlayer.swift */,
-				4386163E254E8F5A0084814C /* AGAudioPlayer-Bridging-Header.h */,
 			);
 			path = AGAudioPlayer;
 			sourceTree = "<group>";
@@ -233,6 +239,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C1511AB21BDD9F6E003B4E6C /* AGAudioPlayerOSX */ = {
+			isa = PBXGroup;
+			children = (
+				C1511AB31BDD9F6E003B4E6C /* AppDelegate.h */,
+				C1511AB41BDD9F6E003B4E6C /* AppDelegate.m */,
+				C1511AB91BDD9F6E003B4E6C /* Assets.xcassets */,
+				C1511ABB1BDD9F6E003B4E6C /* MainMenu.xib */,
+				C1511ABE1BDD9F6E003B4E6C /* Info.plist */,
+				C1511AB61BDD9F6E003B4E6C /* Supporting Files */,
+			);
+			path = AGAudioPlayerOSX;
+			sourceTree = "<group>";
+		};
+		C1511AB61BDD9F6E003B4E6C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1511AB71BDD9F6E003B4E6C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -261,22 +288,22 @@
 		7CC2508C1A447901009F91C8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 1160;
 				ORGANIZATIONNAME = "Alec Gorge";
 				TargetAttributes = {
 					7CC250931A447901009F91C8 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = HT7ELV3Q35;
+						DevelopmentTeam = A64B5QV548;
 						LastSwiftMigration = 1020;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 7CC2508F1A447901009F91C8 /* Build configuration list for PBXProject "AGAudioPlayer" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
 				en,
 				Base,
 			);
@@ -360,7 +387,6 @@
 			files = (
 				7C7FE9991F79D9DA003D47C6 /* RemoteCommandManager.swift in Sources */,
 				7CB928D11E316DB700D963A0 /* AGAudioPlayerTitleView.swift in Sources */,
-				43861642254E8FD60084814C /* AudioPlayer.swift in Sources */,
 				7CC250CE1A447A98009F91C8 /* AGAudioPlayerUpNextQueue.m in Sources */,
 				7CC250A01A447901009F91C8 /* ViewController.m in Sources */,
 				7CC250C01A44792F009F91C8 /* AGAudioPlayer.m in Sources */,
@@ -387,6 +413,14 @@
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
+		C1511ABB1BDD9F6E003B4E6C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C1511ABC1BDD9F6E003B4E6C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -396,18 +430,27 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -446,18 +489,27 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -491,8 +543,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = HT7ELV3Q35;
+				DEVELOPMENT_TEAM = A64B5QV548;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -511,9 +565,10 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_LIBTOOLFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alecgorge.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.AGAudioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AGAudioPlayer/AGAudioPlayer-Bridging-Header.h";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AGAudioPlayer/UI/AGAudioPlayer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
@@ -525,8 +580,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = HT7ELV3Q35;
+				DEVELOPMENT_TEAM = A64B5QV548;
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
@@ -545,9 +602,10 @@
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "$(inherited)";
 				OTHER_LIBTOOLFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.alecgorge.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.AGAudioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "AGAudioPlayer/AGAudioPlayer-Bridging-Header.h";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "AGAudioPlayer/UI/AGAudioPlayer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;

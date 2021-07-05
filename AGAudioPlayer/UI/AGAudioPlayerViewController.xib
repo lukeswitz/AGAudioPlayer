@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -229,9 +229,6 @@
                             <connections>
                                 <outlet property="dataSource" destination="-1" id="eJo-JJ-Svo"/>
                                 <outlet property="delegate" destination="-1" id="z9B-wY-a20"/>
-                                <outlet property="emptyDataSetDelegate" destination="-1" id="v3y-HV-V5E"/>
-                                <outlet property="emptyDataSetSource" destination="-1" id="d9S-4T-gkK"/>
-                                <outlet property="prefetchDataSource" destination="-1" id="y4W-wL-y4D"/>
                             </connections>
                         </tableView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z3c-Z9-Kas">
@@ -647,16 +644,16 @@
             <size key="intrinsicContentSize" width="67.5" height="24"/>
         </designable>
         <designable name="t5s-bW-saf">
-            <size key="intrinsicContentSize" width="28.5" height="13.5"/>
+            <size key="intrinsicContentSize" width="31" height="14.5"/>
         </designable>
         <designable name="zis-2F-bXq">
-            <size key="intrinsicContentSize" width="33" height="16"/>
+            <size key="intrinsicContentSize" width="39.5" height="19.5"/>
         </designable>
     </designables>
     <resources>
         <image name="backward" width="24" height="24"/>
         <image name="chevron" width="24" height="24"/>
-        <image name="dots" width="16" height="16"/>
+        <image name="dots" width="24" height="24"/>
         <image name="forward" width="24" height="24"/>
         <image name="loop" width="16" height="16"/>
         <image name="pause" width="24" height="24"/>

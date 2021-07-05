@@ -172,23 +172,25 @@ public struct AGAudioPlayerColors {
         
         uiMiniButtonPlus.isHidden = true
         uiButtonPlus.alpha = 0.0
-        DispatchQueue.main.async {
-            self.setupTable()
-            self.setupStretchyHeader()
-            self.setupColors()
-            self.setupPlayerUiActions()
-        }
+        
+        setupTable()
+        
+        setupColors()
+        setupPlayerUiActions()
     }
     
-    override public func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        
+    override public func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setupStretchyHeader()
+        self.view.layoutIfNeeded()
         viewWillAppear_StretchyHeader()
         viewWillAppear_Table()
         updateUI()
         
         uiSliderVolume.isHidden = false
     }
+    
+    
     
     public override func viewDidDisappear(_ animated: Bool) {
         uiSliderVolume.isHidden = true
@@ -751,7 +753,7 @@ extension AGAudioPlayerViewController {
         
         let insets = UIApplication.shared.keyWindow!.rootViewController!.view.safeAreaInsets
         self.uiConstraintSpaceBetweenPlayers.constant = insets.top
-        self.view.layoutIfNeeded()
+        
         
         self.uiConstraintBottomBarHeight.constant += insets.bottom * 2
         self.uiFooterView.layoutIfNeeded()

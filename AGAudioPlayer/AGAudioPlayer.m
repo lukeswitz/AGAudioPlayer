@@ -442,6 +442,20 @@
     [self.delegate audioPlayerAudioSessionSetUp:self];
 }
 
+// OPTIONAL: if not implemented, will pause playback
+- (void)audioPlayerBeginInterruption:(AGAudioPlayer * _Nonnull)audioPlayer{
+    [self.delegate audioPlayer:self
+        uiNeedsRedrawForReason:AGAudioPlayerRedrawReasonStopped];
+}
+
+// OPTIONAL: if not implemented, will resume playback if resume == YES
+- (void)audioPlayerEndInterruption:(AGAudioPlayer * _Nonnull)audioPlayer
+                      shouldResume:(BOOL)resume{
+    [self.delegate audioPlayer:self
+        uiNeedsRedrawForReason:AGAudioPlayerRedrawReasonPlaying];
+}
+
+
 -(void)BASSDownloadPlaybackStateChanged:(BassPlaybackState)state {
     switch (state) {
         case BassPlaybackStatePaused:
